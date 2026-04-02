@@ -1,2 +1,0 @@
-Build failed:
-[4/3/2026 6:12:55 AM, E:\poetool\ExileApi\Plugins\Source\ScarabVendor\ScarabVendor\ScarabVendor.cs(149, 32)] CS1026: ) expected
