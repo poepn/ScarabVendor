@@ -144,8 +144,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                 if (_stopRequested) break;
 
                 var stashObj = GameController.Entities.FirstOrDefault(x =>
-                x.Path.Contains("Stash") &&
-                !x.Path.Contains("Guild") &&
+                x.Path.Contains("MiscellaneousObjects/Stash") &&              
                 x.IsTargetable);
 
                 if (stashObj != null)
