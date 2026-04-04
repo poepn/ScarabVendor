@@ -85,7 +85,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                     int currentCount = GameController.IngameState.ServerData.PlayerInventories[0].Inventory.InventorySlotItems
                         .Sum(x => x.Item?.GetComponent<ExileCore.PoEMemory.Components.Stack>()?.Size ?? 1);
 
-                    if (currentCount >= 160) break;
+                    if (currentCount >= 150) break;
 
                     var rect = item.GetClientRect();
                     Input.SetCursorPos(new System.Numerics.Vector2(rect.Center.X + windowOffset.X, rect.Center.Y + windowOffset.Y));
