@@ -135,7 +135,7 @@ public class ScarabVendor : BaseSettingsPlugin<ScarabVendorSettings>
                         if (btn != null && btn.IsVisible)
                         {
                             Input.SetCursorPos(new System.Numerics.Vector2(btn.GetClientRect().Center.X + windowOffset.X, btn.GetClientRect().Center.Y + windowOffset.Y));
-                            await TaskUtils.NextFrame();
+                            await System.Threading.Tasks.Task.Delay(Random.Shared.Next(80, 151));
                             Input.Click(MouseButtons.Left);
                             await System.Threading.Tasks.Task.Delay(Random.Shared.Next(900, 1201));
                         }
